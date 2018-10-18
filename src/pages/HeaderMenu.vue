@@ -17,7 +17,6 @@
   export default {
     data() {
       return {
-        name: 0,
         theme1: 'dark',
         menuList: [
           {
@@ -51,21 +50,20 @@
       }
     }, methods: {
       selectItem(name) {
-
+        console.log(name)
         if (name === 'customer') {
           this.$http.get('http://localhost:8080/static/json/customer.json')
             .then(function (response) {
               store.state.itemName = response.data
             })
-            .catch(function (error) {
-              // handle error
-              console.log(error);
+
+
+        }
+        if (name === 'sale') {
+          this.$http.get('http://localhost:8080/static/json/sales.json')
+            .then(function (response) {
+              store.state.itemName = response.data
             })
-            .then(function () {
-              // always executed
-            });
-
-
         }
       }
     },created:function () {

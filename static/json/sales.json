@@ -1,25 +1,16 @@
 [
   {
-    "customer": {
-      "name": "customer",
-      "type": "md-bookmarks",
-      "text": "客户管理",
-      "content": {
-        "title": "客户新增",
-        "find": "客户查询"
-      }
-    }
+    "name": "customer",
+    "type": "md-bookmarks",
+    "text": "销售管理",
+    "title": "新增订单",
+    "find": "订单查询"
   },
   {
-    "Contact": {
-      "name": "Contact",
-      "type": "ios-flame",
-      "text": "联系人管理",
-      "content": {
-        "title": "联系人新增",
-        "find": "联系人查询"
-      }
-    }
-  },
-
+    "name": "Contact",
+    "type": "ios-flame",
+    "text": "商品管理",
+    "title": "存量查询",
+    "find": "物流信息"
+  }
 ]
