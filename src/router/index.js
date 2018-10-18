@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Login from "@/auth/login"
-import Layout from "@/pages/layout"
+import Login from '@/auth/login'
+import Full from '@/pages/Full'
 Vue.use(Router)
 
 export default new Router({
@@ -12,8 +12,8 @@ export default new Router({
       component:Login
     },{
       path:'/',
-      name:"layout",
-      component:Layout
+      name:"Full",
+      component:Full
     }
   ]
 })

@@ -1,0 +1,25 @@
+[
+  {
+    "customer": {
+      "name": "customer",
+      "type": "md-bookmarks",
+      "text": "客户管理",
+      "content": {
+        "title": "客户新增",
+        "find": "客户查询"
+      }
+    }
+  },
+  {
+    "Contact": {
+      "name": "Contact",
+      "type": "ios-flame",
+      "text": "联系人管理",
+      "content": {
+        "title": "联系人新增",
+        "find": "联系人查询"
+      }
+    }
+  },
+
+]
