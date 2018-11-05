@@ -8,13 +8,11 @@
   width: 100%;
   height:50px;
   text-align: center;
-  background: #ececec;
+  background: #515a6e;
   line-height: 50px;
   position: fixed;
   bottom: 0px;
-  width: 100%;
-  height: 50px;
   z-index: 233;
-
+  color: white;
 }
 </style>

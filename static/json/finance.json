@@ -1,0 +1,67 @@
+[
+  {
+    "name": "statistics",
+    "type": "md-bookmarks",
+    "text": "统计分析",
+    "children": [
+      {
+        "text": "财务流水"
+      }
+    ]
+  },
+  {
+    "name": "financialType",
+    "type": "md-bookmarks",
+    "text": "财务类型",
+    "children": [
+      {
+        "text": "费用收入类型"
+      },
+      {
+        "text": "费用开支类型"
+      }, {
+        "text": "银行账号管理"
+      }
+    ]
+  },{
+  "name": "payment",
+  "type": "md-bookmarks",
+  "text": "付款管理",
+  "children": [
+    {
+      "text": "付款计划"
+    },
+    {
+      "text": "付款记录"
+    }, {
+      "text": "收票记录"
+    }
+  ]
+},{
+  "name": "payback",
+  "type": "md-bookmarks",
+  "text": "回款管理",
+  "children": [
+    {
+      "text": "回款计划"
+    },
+    {
+      "text": "回款记录"
+    }, {
+      "text": "开票记录"
+    }
+  ]
+},{
+  "name": "spending",
+  "type": "md-bookmarks",
+  "text": "收入开支",
+  "children": [
+    {
+      "text": "其他收入单"
+    },
+    {
+      "text": "费用支出单"
+    }
+  ]
+}
+]

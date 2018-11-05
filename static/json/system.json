@@ -1,0 +1,88 @@
+[
+  {
+    "name": "customer",
+    "type": "md-bookmarks",
+    "text": "系统设置",
+    "children": [
+      {
+        "text": "系统参数"
+      },
+      {
+        "text": "个人设置"
+      }
+    ]
+  },
+  {
+    "name": "customer",
+    "type": "md-bookmarks",
+    "text": "组织结构",
+    "children": [
+      {
+        "text": "部门管理"
+      },
+      {
+        "text": "权限管理"
+      },{
+        "text": "岗位管理"
+      },{
+        "text": "用户管理"
+      }
+    ]
+  },{
+  "name": "customer",
+  "type": "md-bookmarks",
+  "text": "客户模板",
+  "children": [
+    {
+      "text": "沟通记录"
+    },
+    {
+      "text": "隶属行业"
+    },{
+      "text": "经济类型"
+    },{
+      "text": "客户来源"
+    },{
+      "text": "销售方式"
+    },{
+      "text": "销售阶段"
+    },{
+      "text": "服务类型"
+    },{
+      "text": "服务方式"
+    }
+  ]
+},{
+  "name": "customer",
+  "type": "md-bookmarks",
+  "text": "产品模板",
+  "children": [
+    {
+      "text": "产品单位"
+    },
+    {
+      "text": "产品分类"
+    },{
+      "text": "产品性质"
+    },{
+      "text": "产品管理"
+    }
+  ]
+},{
+  "name": "customer",
+  "type": "md-bookmarks",
+  "text": "产品模板",
+  "children": [
+    {
+      "text": "产品单位"
+    },
+    {
+      "text": "产品分类"
+    },{
+      "text": "产品性质"
+    },{
+      "text": "产品管理"
+    }
+  ]
+}
+]

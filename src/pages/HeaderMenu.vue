@@ -25,21 +25,16 @@
             text: '客户管理',
           },
           {
-            name: 'sale',
-            type: 'ios-flame',
-            text: '销售管理',
-          },
-          {
-            name: 'invoicing',
+            name: 'stock',
             type: 'ios-trending-up',
-            text: '进销存',
+            text: '库存管理',
           },
           {
-            name: 'analyze',
+            name: 'finance',
             type: 'ios-paper',
-            text: '统计分析',
+            text: '财务管理',
           }, {
-            name: 'Setting',
+            name: 'system',
             type: 'md-build',
             text: '系统设置',
           }
@@ -51,26 +46,17 @@
     }, methods: {
       selectItem(name) {
         console.log(name)
-        if (name === 'customer') {
-          this.$http.get('http://localhost:8080/static/json/customer.json')
+          this.$http.get('http://localhost:8080/static/json/'+name+'.json')
             .then(function (response) {
               store.state.itemName = response.data
             })
-
-
-        }
-        if (name === 'sale') {
-          this.$http.get('http://localhost:8080/static/json/sales.json')
-            .then(function (response) {
-              store.state.itemName = response.data
-            })
-        }
       }
     },created:function () {
+
       this.$http.get('http://localhost:8080/static/json/customer.json')
         .then(function (response) {
           store.state.itemName = response.data
-        })
+        });
     }
   }
 </script>

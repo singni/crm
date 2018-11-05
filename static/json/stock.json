@@ -1,0 +1,31 @@
+[
+  {
+    "name": "customer",
+    "type": "md-bookmarks",
+    "text": "库存管理",
+    "children": [
+      {
+        "text": "供应商列表"
+      },
+      {
+        "text": "供应商联系人"
+      },
+      {
+        "text": "供应商报价"
+      }
+    ]
+  },
+  {
+    "name": "customer",
+    "type": "md-bookmarks",
+    "text": "采购管理",
+    "children": [
+      {
+        "text": "采购订单"
+      },
+      {
+        "text": "采购明细"
+      }
+    ]
+  }
+]

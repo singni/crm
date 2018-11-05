@@ -3,14 +3,78 @@
     "name": "customer",
     "type": "md-bookmarks",
     "text": "客户管理",
-    "title": "客户新增",
-    "find": "客户查询"
+    "children": [
+      {
+        "text": "客户新增",
+        "link": "/customer/add"
+      },
+      {
+        "text": "客户查询",
+        "link": "/customer/list"
+      }
+    ]
   },
   {
-    "name": "Contact",
-    "type": "ios-flame",
+    "name": "linkman",
+    "type": "md-bookmarks",
     "text": "联系人管理",
-    "title": "联系人新增",
-    "find": "联系人查询"
-  }
+    "children": [
+      {
+        "text": "联系人新增",
+        "link": "/linkman/add"
+      },
+      {
+        "text": "联系人查询",
+        "link": "/linkman/list"
+      }
+    ]
+  },{
+  "name": "sales",
+  "type": "md-bookmarks",
+  "text": "销售管理",
+  "children": [
+    {
+      "text": "销售机会",
+      "link": "/sales/list"
+    },
+    {
+      "text": "跟踪记录",
+      "link": "/sales/annal"
+    },{
+      "text": "产品报价",
+      "link": "/sales/quoteprice"
+    },{
+      "text": "项目报备",
+      "link": "/sales/pjreport"
+    }
+  ]
+} ,{
+  "name": "contract",
+  "type": "md-bookmarks",
+  "text": "合同管理",
+  "children": [
+    {
+      "text": "合同管理",
+      "link": "/contract/list"
+    },
+    {
+      "text": "网站管理",
+      "link": "/contract/website"
+    }
+  ]
+},{
+  "name": "order",
+  "type": "md-bookmarks",
+  "text": "订单管理",
+  "children": [
+    {
+      "text": "订单管理",
+      "link": "/order/add"
+    },
+    {
+      "text": "订单明细",
+      "link": "/order/list"
+    }
+  ]
+}
 ]

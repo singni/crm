@@ -12,7 +12,9 @@
         <Layout>
           <Content>
             <Layout>
-              <Contents/>
+              <Contents>
+
+              </Contents>
             </Layout>
             <Layout>
               <Footer/>
@@ -28,6 +30,7 @@
   import SidebarMenu from './SidebarMenu'
   import Footer from './Footer'
   import Contents from './Contents'
+
   export default {
     data() {
       return {}
@@ -38,5 +41,6 @@
       Contents,
       Footer
     }
+
   }
 </script>

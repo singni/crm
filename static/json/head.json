@@ -1,0 +1,27 @@
+[
+  {
+    "name": "customer",
+    "type": "md-bookmarks",
+    "text": "客户管理"
+  },
+  {
+    "name": "sale",
+    "type": "ios-flame",
+    "text": "销售管理"
+  },
+  {
+    "name": "invoicing",
+    "type": "ios-trending-up",
+    "text": "进销存"
+  },
+  {
+    "name": "analyze",
+    "type": "ios-paper",
+    "text": "统计分析"
+  },
+  {
+    "name": "Setting",
+    "type": "md-build",
+    "text": "系统设置"
+  }
+  }
