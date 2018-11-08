@@ -69,11 +69,11 @@
   "children": [
     {
       "text": "订单管理",
-      "link": "/order/add"
+      "link": "/order/list"
     },
     {
       "text": "订单明细",
-      "link": "/order/list"
+      "link": "/order/detail"
     }
   ]
 }

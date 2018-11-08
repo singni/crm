@@ -16,7 +16,7 @@
             </FormItem>
           </Col>
           <Col span="4">
-            <FormItem label="联系时间">
+            <FormItem label="建档时间">
               <DatePicker type="daterange" placement="bottom-end" placeholder="Select date" ></DatePicker>
             </FormItem>
           </Col>
@@ -28,14 +28,14 @@
           </Col>
           <Col span="2">
             <FormItem >
-              <Button type="primary"  @click="newCenter = true" >订单新增</Button>
+              <Button type="primary"  @click="newCenter = true" >新增</Button>
             </FormItem>
 
             <Modal
               v-model="newCenter"
-              title="订单新增">
+              title="新增流水">
 
-              <OrderNew></OrderNew>
+              <BandkAccountAdd></BandkAccountAdd>
               <div slot="footer">
 
                 <FormItem>
@@ -65,7 +65,7 @@
   </div>
 </template>
 <script>
-  import OrderNew from './order-new'
+import BandkAccountAdd from './BandkAccountAdd'
   export default {
     data() {
       return {
@@ -78,74 +78,32 @@
         },
         listcol: [
           {
-            title: '订单编号',
+            title: '编号',
             key: 'name'
           },
           {
-            title: '客户名称',
+            title: '开户银行',
             key: 'age'
           },
           {
-            title: '销售机会',
+            title: '卡号',
             key: 'linkman'
           },
           {
-            title: '总金额',
+            title: '开户人',
             key: 'phone'
           },
 
           {
-            title: '去零金额',
+            title: '开户行地址',
             key: 'moblie'
-          },
-
-          {
-            title: '回款金额',
-            key: 'address'
-          },
-
-          {
-            title: '发货金额',
-            key: 'level'
-          },
-
-          {
-            title: '回款金额',
-            key: 'source'
-          },{
-            title: '发货金额',
-            key: 'source'
-          },{
-            title: '开票金额',
-            key: 'source'
-          },{
-            title: '签订时间',
-            key: 'source'
-          },{
-            title: '发货时间',
-            key: 'source'
-          },{
-            title: '我方代表',
-            key: 'source'
-          },{
-            title: '订单状态',
-            key: 'source'
-          },{
-            title: '付款状态',
-            key: 'source'
-          },{
-            title: '开票状态',
-            key: 'source'
-          },{
-            title: '操作',
-            key: 'source'
           }
 
         ],
         tdata:[]
       }
     } ,components: {
-      OrderNew
+      BandkAccountAdd
     },methods: {
       handleSubmit (name) {
         this.$refs[name].validate((valid) => {

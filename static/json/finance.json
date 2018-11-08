@@ -5,7 +5,8 @@
     "text": "统计分析",
     "children": [
       {
-        "text": "财务流水"
+        "text": "财务流水",
+        "link":"/finance/statistics"
       }
     ]
   },
@@ -20,7 +21,8 @@
       {
         "text": "费用开支类型"
       }, {
-        "text": "银行账号管理"
+        "text": "银行账号管理",
+        "link":"/finance/bankaccount"
       }
     ]
   },{
@@ -29,12 +31,15 @@
   "text": "付款管理",
   "children": [
     {
-      "text": "付款计划"
+      "text": "付款计划",
+      "link":"/finance/paymentplan"
     },
     {
-      "text": "付款记录"
+      "text": "付款记录",
+      "link":"/finance/PaymentRecord"
     }, {
-      "text": "收票记录"
+      "text": "收票记录",
+      "link":"/finance/InvoiceRecord"
     }
   ]
 },{

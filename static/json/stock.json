@@ -5,10 +5,12 @@
     "text": "库存管理",
     "children": [
       {
-        "text": "供应商列表"
+        "text": "供应商列表",
+        "link":"/supplier/list"
       },
       {
-        "text": "供应商联系人"
+        "text": "供应商联系人",
+        "link":"/supplier/link"
       },
       {
         "text": "供应商报价"
@@ -21,10 +23,12 @@
     "text": "采购管理",
     "children": [
       {
-        "text": "采购订单"
+        "text": "采购订单",
+        "link":"/purchase/list"
       },
       {
-        "text": "采购明细"
+        "text": "采购明细",
+        "link":"/purchasedetail/detail"
       }
     ]
   }

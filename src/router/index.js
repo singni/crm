@@ -12,6 +12,18 @@ import annalList from '@/components/sales/annalList'
 import  pjreportList from '@/components/sales/pjreportList'
 import contract  from '@/components/contract/contract'
 import  website from '@/components/contract/website'
+
+import  order from '@/components/order/order'
+import orderDetail  from '@/components/order/order-detail'
+import  supplier from '@/components/supplier/supplier'
+import  supplierlink from '@/components/supplier/supplier-link'
+import  purchase from '@/components/purchase/purchase.vue'
+import  PurchaseDetail from '@/components/purchase/purchase-detail'
+import  statistics from '@/components/finance/statistics'
+import BankAccount from '@/components/finance/BankAccount'
+import PaymentPlan from '@/components/finance/PaymentPlan'
+import PaymentRecord from '@/components/finance/PaymentRecord'
+import InvoiceRecord from '@/components/finance/InvoiceRecord'
 Vue.use(Router)
 
 export default new Router({
@@ -75,6 +87,60 @@ export default new Router({
           path: '/contract/website',
           component: website
         },
+        {
+          name:"order",
+          path: '/order/list',
+          component: order
+        },
+        {
+          name:"orderDetail",
+          path: '/order/detail',
+          component: orderDetail
+        },  {
+          name:"supplier",
+          path: '/supplier/list',
+          component: supplier
+        },
+         {
+          name:"supplier",
+          path: '/supplier/link',
+          component: supplierlink
+        },
+         {
+          name:"purchase",
+          path: '/purchase/list',
+          component: purchase
+        },
+         {
+          name:"PurchaseDetail",
+          path: '/purchasedetail/detail',
+          component: PurchaseDetail
+        },
+         {
+          name:"statistics",
+          path: '/finance/statistics',
+          component: statistics
+        },{
+          name:"BankAccount",
+          path: '/finance/bankaccount',
+          component: BankAccount
+        },
+        {
+          name:"PaymentPlan",
+          path: '/finance/paymentplan',
+          component: PaymentPlan
+        },
+        {
+          name:"PaymentRecord",
+          path: '/finance/PaymentRecord',
+          component: PaymentRecord
+        },
+        {
+          name:"InvoiceRecord",
+          path: '/finance/InvoiceRecord',
+          component: InvoiceRecord
+        },
+
       ]
     },
 

@@ -16,7 +16,7 @@
             </FormItem>
           </Col>
           <Col span="4">
-            <FormItem label="联系时间">
+            <FormItem label="建档时间">
               <DatePicker type="daterange" placement="bottom-end" placeholder="Select date" ></DatePicker>
             </FormItem>
           </Col>
@@ -28,20 +28,21 @@
           </Col>
           <Col span="2">
             <FormItem >
-              <Button type="primary"  @click="newCenter = true" >订单新增</Button>
+              <Button type="primary"  @click="newCenter = true" >采购订单添加</Button>
             </FormItem>
 
             <Modal
               v-model="newCenter"
-              title="订单新增">
+              title="采购订单添加">
 
-              <OrderNew></OrderNew>
+              <PurchaseAdd></PurchaseAdd>
               <div slot="footer">
 
                 <FormItem>
                   <Button type="primary" @click="handleSubmit('formValidate')">提交</Button>
                   <Button @click="handleReset('formValidate')" style="margin-left: 8px">重置</Button>
                 </FormItem>
+
               </div>
             </Modal>
           </Col>
@@ -65,7 +66,7 @@
   </div>
 </template>
 <script>
-  import OrderNew from './order-new'
+  import PurchaseAdd from './purchase-add'
   export default {
     data() {
       return {
@@ -78,51 +79,48 @@
         },
         listcol: [
           {
-            title: '订单编号',
+            title: '主题',
             key: 'name'
           },
           {
-            title: '客户名称',
+            title: '订单编号',
             key: 'age'
           },
           {
-            title: '销售机会',
+            title: '客户名称',
             key: 'linkman'
           },
           {
-            title: '总金额',
+            title: '联系人',
             key: 'phone'
           },
 
           {
-            title: '去零金额',
+            title: '采购时间',
             key: 'moblie'
           },
 
           {
-            title: '回款金额',
+            title: '预计到货时间',
             key: 'address'
           },
 
           {
-            title: '发货金额',
+            title: '总金额',
             key: 'level'
           },
 
           {
-            title: '回款金额',
+            title: '去零金额',
             key: 'source'
           },{
-            title: '发货金额',
+            title: '付款金额',
             key: 'source'
           },{
-            title: '开票金额',
+            title: '入库金额',
             key: 'source'
           },{
-            title: '签订时间',
-            key: 'source'
-          },{
-            title: '发货时间',
+            title: '已收票金额',
             key: 'source'
           },{
             title: '我方代表',
@@ -132,6 +130,9 @@
             key: 'source'
           },{
             title: '付款状态',
+            key: 'source'
+          },{
+            title: '收货状态',
             key: 'source'
           },{
             title: '开票状态',
@@ -145,7 +146,7 @@
         tdata:[]
       }
     } ,components: {
-      OrderNew
+      PurchaseAdd,
     },methods: {
       handleSubmit (name) {
         this.$refs[name].validate((valid) => {

@@ -3,49 +3,39 @@
     <Row type="flex" justify="start" class="code-row-bg">
       <Col span="12">
         <Form ref="formValidate" :model="formValidate" :rules="ruleValidate" :label-width="80">
-          <FormItem label="客户名称" prop="name">
+          <FormItem label="订单编号" prop="name">
             <Input v-model="formValidate.name"></Input>
           </FormItem>
-          <FormItem label="网站地址:" prop="level">
+          <FormItem label="客户名称:" prop="level">
             <Input v-model="formValidate.name"></Input>
           </FormItem>
-          <FormItem label="结束时间:" prop="industry">
-            <DatePicker type="daterange" placement="bottom-end" placeholder="Select date"></DatePicker>
-          </FormItem>
-          <FormItem label="icp账号:" prop="industry">
+          <FormItem label="销售机会:" prop="industry">
             <Input v-model="formValidate.industry" ></Input>
           </FormItem>
-          <FormItem label="icp密码:" prop="linkman">
+          <FormItem label="订单签订时间:" prop="linkman">
             <DatePicker type="daterange" placement="bottom-end" placeholder="Select date"></DatePicker>
-          </FormItem>
-          <FormItem label="icp备案号:" prop="industry">
-            <Input v-model="formValidate.industry" ></Input>
           </FormItem>
         </Form>
       </Col>
       <Col span="12">
         <Form ref="formValidate" :model="formValidate" :rules="ruleValidate" :label-width="80">
-          <FormItem label="网站名称:" prop="source">
+          <FormItem label="主题:" prop="source">
             <Input v-model="formValidate.souce"></Input>
           </FormItem>
-          <FormItem label="开始时间:" prop="type">
+          <FormItem label="联系人:" prop="type">
             <Input v-model="formValidate.type"></Input>
           </FormItem>
-          <FormItem label="ftp地址:" prop="website">
+          <FormItem label="我方代表:" prop="website">
             <Input v-model="formValidate.website" ></Input>
           </FormItem>
-          <FormItem label="ftp账号:" prop="moblie">
+          <FormItem label="最晚发货时间:" prop="moblie">
             <DatePicker type="daterange" placement="bottom-end" placeholder="Select date"></DatePicker>
-          </FormItem>
-          <FormItem label="ftp密码:" prop="moblie">
-
-            <Input v-model="formValidate.website" ></Input>
           </FormItem>
         </Form>
       </Col>
       <Col span="24">
         <Form ref="formValidate" :model="formValidate" :rules="ruleValidate" :label-width="80">
-          <FormItem label="介绍:" prop="remember">
+          <FormItem label="备注:" prop="remember">
             <Input v-model="formValidate.remember" type="textarea" :autosize="{minRows: 4,maxRows: 30}"></Input>
           </FormItem>
         </Form>
