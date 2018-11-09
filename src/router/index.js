@@ -24,6 +24,13 @@ import BankAccount from '@/components/finance/BankAccount'
 import PaymentPlan from '@/components/finance/PaymentPlan'
 import PaymentRecord from '@/components/finance/PaymentRecord'
 import InvoiceRecord from '@/components/finance/InvoiceRecord'
+import PaybackPlan from '@/components/finance/PaybackPlan'
+import ReturnRecord from '@/components/finance/ReturnRecord'
+import BillingRecord from '@/components/finance/BillingRecord'
+import OtherIncome from '@/components/finance/OtherIncome'
+import Expenses from '@/components/finance/Expenses'
+
+
 Vue.use(Router)
 
 export default new Router({
@@ -139,6 +146,31 @@ export default new Router({
           name:"InvoiceRecord",
           path: '/finance/InvoiceRecord',
           component: InvoiceRecord
+        },
+      {
+        name:"PaybackPlan",
+        path: '/finance/paybackplan',
+        component: PaybackPlan
+      },
+        {
+          name:"ReturnRecord",
+          path: '/finance/returnrecord',
+          component: ReturnRecord
+        },
+        {
+          name:"BillingRecord",
+          path: '/finance/BillingRecord',
+          component: BillingRecord
+        },
+        {
+          name:"OtherIncome",
+          path: '/finance/OtherIncome',
+          component: OtherIncome
+        },
+        {
+          name:"Expenses",
+          path: '/finance/Expenses',
+          component: Expenses
         },
 
       ]

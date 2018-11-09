@@ -48,12 +48,15 @@
   "text": "回款管理",
   "children": [
     {
-      "text": "回款计划"
+      "text": "回款计划",
+      "link":"/finance/paybackplan"
     },
     {
-      "text": "回款记录"
+      "text": "回款记录",
+      "link":"/finance/returnrecord"
     }, {
-      "text": "开票记录"
+      "text": "开票记录",
+      "link":"/finance/BillingRecord"
     }
   ]
 },{
@@ -62,10 +65,12 @@
   "text": "收入开支",
   "children": [
     {
-      "text": "其他收入单"
+      "text": "其他收入单",
+      "link":"/finance/OtherIncome"
     },
     {
-      "text": "费用支出单"
+      "text": "费用支出单",
+      "link":"/finance/Expenses"
     }
   ]
 }
