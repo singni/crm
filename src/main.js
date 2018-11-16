@@ -6,6 +6,7 @@ import router from './router'
 import iView from 'iview'
 import 'iview/dist/styles/iview.css';
 import axios from 'axios'
+import '@/my-theme/index.less';
 Vue.prototype.$http = axios
 Vue.config.productionTip = false
 Vue.use(iView);
@@ -15,3 +16,4 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+
