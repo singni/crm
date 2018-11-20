@@ -6,7 +6,7 @@
         <FormItem label="客户名称" prop="name">
           <Input v-model="formValidate.name"></Input>
         </FormItem>
-        <FormItem label="当前阶段:" prop="level">
+        <FormItem label="当前阶段:" prop="stage">
           <template>
             <AutoComplete
               v-model="stage"
@@ -15,7 +15,7 @@
             </AutoComplete>
           </template>
         </FormItem>
-        <FormItem label="预计签单时间:" prop="industry">
+        <FormItem label="预计签单时间:" prop="EsTPreTime">
           <Input v-model="formValidate.industry" ></Input>
         </FormItem>
         <FormItem label="可能性:" prop="linkman">
@@ -26,16 +26,13 @@
       </Col>
       <Col span="12">
         <Form ref="formValidate" :model="formValidate" :rules="ruleValidate" :label-width="80">
-          <FormItem label="联系人:" prop="source">
-            <Input v-model="formValidate.souce"></Input>
-          </FormItem>
-          <FormItem label="发现时间:" prop="type">
+          <FormItem label="发现时间:" prop="DiscoveryTime">
             <Input v-model="formValidate.type"></Input>
           </FormItem>
-          <FormItem label="预计金额:" prop="website">
+          <FormItem label="预计金额:" prop="EstimatedAmount">
             <Input v-model="formValidate.website" ></Input>
           </FormItem>
-          <FormItem label="当前状态:" prop="moblie">
+          <FormItem label="当前状态:" prop="state">
             <Select v-model="state" >
               <Option v-for="item in stateList" :value="item.value" :key="item.value">{{ item.label }}</Option>
             </Select>
@@ -58,19 +55,6 @@
       </Col>
     </Row>
 
-
-    <!--<Row type="flex" justify="end" class="code-row-bg">-->
-
-      <!--<Col span="24">-->
-        <!--<Form :model="formValidate" :label-width="80">-->
-          <!--<FormItem>-->
-            <!--<Button type="primary" @click="handleSubmit('formValidate')">提交</Button>-->
-            <!--<Button @click="handleReset('formValidate')" style="margin-left: 8px">重置</Button>-->
-          <!--</FormItem>-->
-
-        <!--</Form>-->
-      <!--</Col>-->
-    <!--</Row>-->
 
   </div>
 </template>

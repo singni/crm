@@ -3,18 +3,20 @@
     <Row type="flex" justify="start" class="code-row-bg">
       <Col span="12">
       <Form ref="formValidate" :model="formValidate" :rules="ruleValidate" :label-width="80">
-        <FormItem label="客户名称" prop="name">
-          <Input v-model="formValidate.name"></Input>
+        <FormItem label="姓名:" prop="name">
+          <Input v-model="formValidate.souce"></Input>
         </FormItem>
-        <FormItem label="性别:" prop="level">
-          <template>
-            <Rate v-model="formValidate.level" />
-          </template>
+        <FormItem label="性别:" prop="sex">
+          <RadioGroup >
+            <Select v-model="sex">
+              <Option v-for="sex in sexs" :value="sex.value" :key="sex.value">{{ sex.label }}</Option>
+            </Select>
+          </RadioGroup>
         </FormItem>
-        <FormItem label="手机:" prop="industry">
+        <FormItem label="手机:" prop="phone">
           <Input v-model="formValidate.industry" ></Input>
         </FormItem>
-        <FormItem label="社交账号:" prop="linkman">
+        <FormItem label="社交账号:" prop="SocialAccount">
           <Input v-model="formValidate.linkman" ></Input>
         </FormItem>
         <FormItem label="邮编:" prop="phone">
@@ -24,26 +26,24 @@
       </Col>
       <Col span="12">
         <Form ref="formValidate" :model="formValidate" :rules="ruleValidate" :label-width="80">
-          <FormItem label="姓名:" prop="source">
-            <Input v-model="formValidate.souce"></Input>
-          </FormItem>
-          <FormItem label="所在职位:" prop="type">
+
+          <FormItem label="所在职位:" prop="Career">
             <Input v-model="formValidate.type"></Input>
           </FormItem>
-          <FormItem label="联系电话:" prop="website">
+          <FormItem label="联系电话:" prop="moblie">
             <Input v-model="formValidate.website" ></Input>
           </FormItem>
-          <FormItem label="邮箱:" prop="moblie">
+          <FormItem label="邮箱:" prop="email">
             <Input v-model="formValidate.moblie" ></Input>
           </FormItem>
-          <FormItem label="联系地址:" prop="fax">
+          <FormItem label="联系地址:" prop="ContactAddress">
             <Input v-model="formValidate.fax" ></Input>
           </FormItem>
         </Form>
       </Col>
       <Col span="24">
       <Form ref="formValidate" :model="formValidate" :rules="ruleValidate" :label-width="80">
-        <FormItem label="介绍:" prop="remember">
+        <FormItem label="介绍:" prop="present">
           <Input v-model="formValidate.remember" type="textarea" :autosize="{minRows: 4,maxRows: 30}"></Input>
         </FormItem>
       </Form>
@@ -70,7 +70,15 @@
   export default {
     data () {
       return {
-
+        sexs: [{
+          value: '0',
+          label: '男'
+        },
+          {
+            value: '1',
+            label: '女'
+          }
+      ],
         formValidate: {
           name: '',
           level: 0,

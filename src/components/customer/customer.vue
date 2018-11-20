@@ -17,7 +17,7 @@
         <FormItem label="联系人员:" prop="linkman">
           <Input v-model="formValidate.linkman" ></Input>
         </FormItem>
-        <FormItem label="电话:" prop="phone">
+        <FormItem label="手机:" prop="phone">
           <Input v-model="formValidate.phone" ></Input>
         </FormItem>
         <FormItem label="邮箱:" prop="email">

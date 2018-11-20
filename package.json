@@ -10,9 +10,10 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "ajv": "^6.5.4",
+    "ajv": "^6.5.5",
     "axios": "^0.18.0",
-    "iview": "^3.1.4",
+    "iview": "^3.1.5",
+    "leancloud-storage": "^3.11.0",
     "less": "^3.8.1",
     "less-loader": "^4.1.0",
     "vue": "^2.5.2",
